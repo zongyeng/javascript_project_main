@@ -1,0 +1,26 @@
+{
+  "name": "javascript_project_main",
+  "version": "0.0.1",
+  "description": "root package and app_react web_react server_express run and node_module",
+  "main": "index.js",
+  "workspaces": [
+    "packages/app_react",
+    "packages/web_react",
+    "packages/server_express"
+  ],
+  "scripts": {
+    "prod": "",
+    "dev": "",
+    "install": "npm cache verify && npm install",
+    "install:clean:linux": "npm cache clean --force & rm -rf node_modules/ & rm -rf package-lock.json && npm run install:clean:linux --workspace=packages/app_react && npm run install:clean:linux --workspace=packages/server_express && npm run install:clean:linux --workspace=packages/web_react",
+    "install:clean:win": "npm cache clean --force & rd /s /q node_modules & del /f /q /a package-lock.json && npm run install:clean:win --workspaces",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app_react": "file:packages/app_react",
+    "server-express": "file:packages/server_express",
+    "web_react": "file:packages/web_react"
+  }
+}

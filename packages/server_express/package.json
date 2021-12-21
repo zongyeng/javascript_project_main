@@ -1,0 +1,18 @@
+{
+  "name": "server-express",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www PORT=4000",
+    "install:clean:linux": "rm -rf node_modules & rm -rf package-lock.json",
+    "install:clean:win": "rd /s /q node_modules & del /f /q /a package-lock.json"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.3",
+    "express": "^4.17.2",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  }
+}
