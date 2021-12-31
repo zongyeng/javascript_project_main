@@ -2,6 +2,7 @@ package com.app_react;
 
 import android.app.Application;
 import android.content.Context;
+import android.webkit.WebView;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
@@ -44,6 +45,7 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
+    WebView.setWebContentsDebuggingEnabled(true);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
 
