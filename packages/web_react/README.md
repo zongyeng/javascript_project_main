@@ -17,18 +17,18 @@ material-dashboard-react
     ├── src
     │   ├── assets
     │   │   ├── images
-    │   │   └── theme
-    │   │       ├── base
-    │   │       ├── components
-    │   │       ├── functions
-    │   │       ├── index.js
-    │   │       └── theme-rtl.js
+    │   │   ├── theme
+    │   │   │   ├── base
+    │   │   │   ├── components
+    │   │   │   ├── functions
+    │   │   │   ├── index.js
+    │   │   │   └── theme-rtl.js
     │   │   └── theme-dark
-    │   │       ├── base
-    │   │       ├── components
-    │   │       ├── functions
-    │   │       ├── index.js
-    │   │       └── theme-rtl.js
+    │   │       ├── base
+    │   │       ├── components
+    │   │       ├── functions
+    │   │       ├── index.js
+    │   │       └── theme-rtl.js
     │   ├── components
     │   │   ├── MDAlert
     │   │   ├── MDAvatar
