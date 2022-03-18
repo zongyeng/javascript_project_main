@@ -11,7 +11,6 @@ router.get('/', function(req, res, next) {
   console.log(process.env.encryption_DB_USER);
   console.log(process.env.encryption_DB_PASS);
   console.log(process.env.JSON);
-  console.log(process.env.JSON);
   res.render('index', { title: 'Express' });
 });
 

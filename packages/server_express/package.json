@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node -r dotenv/config ./bin/www dotenv_config_path=../.env_prd",
-    "start:dev": "node -r dotenv/config ./bin/www dotenv_config_path=../.env_dev",
+    "start": "/nodejs/node.exe -r dotenv/config ./bin/www dotenv_config_path=../.env_prd",
+    "start:dev": "/nodejs/node.exe -r dotenv/config ./bin/www dotenv_config_path=../.env_dev",
     "install:clean:linux": "rm -rf node_modules & rm -rf package-lock.json",
     "install:clean:win": "rd /s /q node_modules & del /f /q /a package-lock.json"
   },
