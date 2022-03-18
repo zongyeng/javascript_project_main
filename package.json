@@ -7,7 +7,7 @@
     "packages/server_express"
   ],
   "scripts": {
-    "start_server_express": "npm run start --workspace=packages/server_express",
+    "start_server_express:dev": "npm run start:dev --workspace=packages/server_express",
     "start_web_react": "npm run start --workspace=packages/web_react",
     "install:clean:linux": "npm cache clean --force & rm -rf node_modules/ & rm -rf package-lock.json && npm run install:clean:linux --workspace=packages/server_express && npm run install:clean:linux --workspace=packages/web_react",
     "install:clean:win": "npm cache clean --force & rd /s /q node_modules & del /f /q /a package-lock.json && npm run install:clean:win --workspaces",
